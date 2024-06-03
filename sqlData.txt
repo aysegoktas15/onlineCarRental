@@ -1,0 +1,39 @@
+<!-- RENTAL -->
+--dateFrom
+--dateTo
+--statusInfo
+--vehicleInfo
+--userInfo 
+	<!-- userInfo -->
+	  --userName
+	  --userSurname
+	  --userMail
+	  --userPassword
+	  --userPhone
+
+	<!-- statusInfo -->
+
+	<!-- vehicleInfo -->
+		  --registrationNo
+		  --modelInfo
+		  --vehicleTypeInfo
+		  --vehicleInfo
+		  --locationInfo
+
+		<!-- vehicleTypeInfo -->
+		  --vehicleCode
+		  --vehicleDescription
+
+		<!-- modelInfo -->
+		  --modelDailyHireRate
+		  --modelName
+  		  --ManufacturerInfo
+
+			<!-- ManufacturerInfo -->
+			  --manufacturerName
+			  --manufacturerDetails
+
+		<!-- locationInfo -->
+		  --locationCode
+		  --locationName
+  
