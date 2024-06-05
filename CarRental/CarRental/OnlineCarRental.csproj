@@ -80,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\Cars\sportsCar1.jpg" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.rtl.css" />
@@ -200,7 +201,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Css\" />
-    <Folder Include="Assets\Image\" />
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="View\Customer\" />
