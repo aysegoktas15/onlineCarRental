@@ -1,12 +1,22 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="CarRental.View.Admin.Cars" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">
+        <style>
+            .form-control {
+                width: 500px; /* Adjust this value as needed */
+                border-color: dimgray;
+                border-width:2px;
+                color:gray;
+                background-color:beige;
+        }
+        </style>
         <div class="container-fluid">
         <div class="row">
             <div class="carInfo">
                 <div class="row">
                     <div class="col">
-                        <h3 class="text-warning pe-lg-4">Manage Cars</h3>
-                        <img src="../../Assets/Images/Cars/sportsCar1.jpg"</div>
+                        <h4 class="text-warning pe-lg-4">Manage Cars</h4>
+                        <img src="../../Assets/Images/Cars/sportsCar1.jpg" />
+                    </div>
                     <div class="col"></div>
                     <div class="col"></div>
                 </div>
@@ -36,7 +46,7 @@
                             <div class="carForm-Group">
                                 <label for="carAvailable">Available</label><br />
                                 <!-- Added these -->
-                                <asp:DropDownList ID="carAvailibity" runat="server">
+                                <asp:DropDownList class="form-control" ID="carAvailibity" runat="server">
                                     <asp:ListItem>Available</asp:ListItem>
                                     <asp:ListItem>Booked</asp:ListItem>
                                 </asp:DropDownList>

@@ -80,7 +80,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\Cars\car-regular-240.png" />
     <Content Include="Assets\Images\Cars\sportsCar1.jpg" />
+    <Content Include="Assets\Images\Users\user-regular-240.png" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.rtl.css" />
