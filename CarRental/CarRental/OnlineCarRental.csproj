@@ -81,6 +81,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\Cars\car-regular-240.png" />
+    <Content Include="Assets\Images\Cars\car1-mercedes-bez-coope.jpg" />
+    <Content Include="Assets\Images\Cars\car2-volvo-stationWagon.jpg" />
+    <Content Include="Assets\Images\Cars\car3-hyundai-sport-utility-vehicle-suv.jpg" />
+    <Content Include="Assets\Images\Cars\car4-chrysler-pacifica-minivan.jpg" />
+    <Content Include="Assets\Images\Cars\car5-honda-ridgeline-pickup-truck.jpg" />
+    <Content Include="Assets\Images\Cars\car6-porche-convertible.jpg" />
+    <Content Include="Assets\Images\Cars\car7-volkswagen-golf-hatchback.jpg" />
     <Content Include="Assets\Images\Cars\sportsCar1.jpg" />
     <Content Include="Assets\Images\Users\user-regular-240.png" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
