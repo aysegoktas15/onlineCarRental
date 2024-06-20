@@ -7,7 +7,11 @@
                 border-width:2px;
                 color:gray;
                 background-color:beige;
-        }
+            }
+            .btn {
+                margin-right: 10px;
+            }
+            
         </style>
         <div class="container-fluid">
         <div class="row">
@@ -52,9 +56,15 @@
                                 </asp:DropDownList>
 
                             </div><br><br>
+                            <label id="ErrorMsg" runat="server"></label>
+                            <asp:Button type="submit" id="btnEdit" class="btn btn-warning" text="Edit" runat="server" width="80px"/>
+                            <asp:Button type="submit" id="btnAdd" class="btn btn-success" text="Add" runat="server" width="80px" OnClick="btnAdd_Click"/>
+                            <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px"/>
+                            <!-- 
                             <button type="submit" class="btn btn-warning">Edit</button>
                             <button type="submit" class="btn btn-success">Add</button>
                             <button type="submit" class="btn btn-danger">Delete</button>
+                                -->
                           </form>
                     </div>
                 </div>

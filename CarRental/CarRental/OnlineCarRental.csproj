@@ -127,6 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Functions.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="ProjectNotes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,7 +212,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Css\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="View\Customer\" />
   </ItemGroup>
