@@ -70,9 +70,13 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <table class="table">
+                <h1>Car List</h1>
+                <asp:Gridview runat="server" id="carList" Class="table" >
+                    <AlternatingRowStyle BorderStyle="None" />
 
-                </table>
+                    <EditRowStyle BackColor="#FFFF66" BorderColor="Gray" BorderWidth="2px" />
+
+                </asp:Gridview>
             </div>
         </div>
     </div>

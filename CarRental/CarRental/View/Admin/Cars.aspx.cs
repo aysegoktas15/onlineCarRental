@@ -13,7 +13,20 @@ namespace CarRental.View.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             _connection = new Models.Functions();
+            ShowCars();
+        }
 
+        //Add this medhod to solve the error we were getting
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            
+        }
+
+        private void ShowCars()
+        {
+            string Query = "select * from tblCar";
+            carList.DataSource = _connection.GetData(Query);
+            carList.DataBind();
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
