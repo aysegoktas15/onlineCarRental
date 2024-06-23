@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -29,50 +31,57 @@ namespace CarRental.Models
         // Method to execute a SELECT query and return the results in a DataTable
         public DataTable GetData (string Query)
         {
-            _dataTable = new DataTable(); // Initialize a new DataTable to hold the results
-            _adapter = new SqlDataAdapter(Query, _connectionStr); // Initialize the SqlDataAdapter with the query and connection string
-            _adapter.Fill(_dataTable); // Fill the DataTable with the results of the query
+            _dataTable = new DataTable();
+            try
+            {
+                _connection.Open(); // Open the connection
+                _adapter = new SqlDataAdapter(Query, _connection);
+                _adapter.Fill(_dataTable); // Fill the DataTable with the results of the query
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                throw new Exception("An error occurred while fetching data: " + ex.Message);
+            }
+            finally
+            {
+                _connection.Close(); // Ensure the connection is closed even if an exception occurs
+            }
 
             return _dataTable; // Return the populated DataTable
         }
 
         // Method to execute an INSERT, UPDATE, or DELETE query and return the number of affected rows
-        /*
-        public int SetData (string Query)
-        {
-            int rent = 0;// Variable to hold the number of affected rows
 
-            // Check if the connection is closed, if so, open it
-            if (_connection.State == ConnectionState.Closed)
-            {
-                _connection.Open();
-            }
-
-            _command.CommandText = Query; // Set the command text to the provided query
-            rent = _command.ExecuteNonQuery(); // Execute the query and get the number of affected rows
-            _connection.Close(); // Close the connection
-
-            return rent; // Return the number of affected rows
-        }
-        */
         public int SetData(string query, Dictionary<string, object> parameters)
         {
             int affectedRows = 0;
 
-            using (SqlConnection connection = new SqlConnection(_connectionStr))
+            using (SqlConnection _connection = new SqlConnection(_connectionStr))
             {
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand(query, _connection))
                 {
                     foreach (var parameter in parameters)
                     {
                         command.Parameters.AddWithValue(parameter.Key, parameter.Value);
                     }
 
-                    connection.Open();
-                    affectedRows = command.ExecuteNonQuery();
+                    try
+                    {
+                        _connection.Open();
+                        affectedRows = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Log or handle the exception as needed
+                        throw new Exception("An error occurred while executing the command: " + ex.Message);
+                    }
+                    finally
+                    {
+                        _connection.Close(); // Ensure the connection is closed even if an exception occurs
+                    }
                 }
             }
-
             return affectedRows;
         }
 

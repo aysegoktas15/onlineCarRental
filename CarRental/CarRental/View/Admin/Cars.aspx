@@ -1,35 +1,52 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="CarRental.View.Admin.Cars" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">
-        <style>
-            .form-control {
-                width: 500px; /* Adjust this value as needed */
-                border-color: dimgray;
-                border-width:2px;
-                color:gray;
-                background-color:beige;
-            }
-            .btn {
-                margin-right: 10px;
-            }
-            
-        </style>
-        <div class="container-fluid">
+    <style>
+        .form-control {
+            width: 100%; /* Adjusted to be responsive */
+            border-color: dimgray;
+            border-width: 2px;
+            color: gray;
+            background-color: beige;
+        }
+        .btn {
+            margin-right: 10px;
+        }
+        .carForm-Group {
+            margin-bottom: 15px;
+        }
+        .container-fluid {
+            margin-top: 20px;
+        }
+        .carInfo img {
+            max-width: 100%; /* Make the image responsive */
+        }
+        .col-md-8 {
+            margin-top: 300px;
+            width:680px
+        }
+        .col-md-4 {
+            width:600px
+        }
+        .form-info {
+            padding-top: 50px;
+        }
+
+    </style>
+    <div class="container-fluid">
         <div class="row">
-            <div class="carInfo">
+            <div class="col-md-4">
                 <div class="row">
-                    <div class="col">
+                    <div class="col manage-car">
                         <h4 class="text-warning pe-lg-4">Manage Cars</h4>
                         <img src="../../Assets/Images/Cars/sportsCar1.jpg" />
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col form-info">
                         <form runat="server">
                             <div class="carForm-Group">
-                              <label for="carLicenceNumber">Licence Number</label> 
-                              <input type="text" class="form-control" id="cLicenceNumber" placeholder="Enter the plate number" runat="server">
+                                <label for="carLicenceNumber">Licence Number</label>
+                                <input type="text" class="form-control" id="cLicenceNumber" placeholder="Enter the plate number" runat="server">
                             </div>
                             <div class="carForm-Group">
                                 <label for="carBrand">Brand</label>
@@ -49,36 +66,26 @@
                             </div>
                             <div class="carForm-Group">
                                 <label for="carAvailable">Available</label><br />
-                                <!-- Added these -->
                                 <asp:DropDownList class="form-control" ID="carAvailibity" runat="server">
                                     <asp:ListItem>Available</asp:ListItem>
                                     <asp:ListItem>Booked</asp:ListItem>
                                 </asp:DropDownList>
-
-                            </div><br><br>
+                            </div>
+                            <br><br>
                             <label id="ErrorMsg" runat="server"></label>
                             <asp:Button type="submit" id="btnEdit" class="btn btn-warning" text="Edit" runat="server" width="80px"/>
                             <asp:Button type="submit" id="btnAdd" class="btn btn-success" text="Add" runat="server" width="80px" OnClick="btnAdd_Click"/>
                             <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px"/>
-                            <!-- 
-                            <button type="submit" class="btn btn-warning">Edit</button>
-                            <button type="submit" class="btn btn-success">Add</button>
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                                -->
-                          </form>
+                        </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
                 <h1>Car List</h1>
-                <asp:Gridview runat="server" id="carList" Class="table" >
-                    <AlternatingRowStyle BorderStyle="None" />
-
-                    <EditRowStyle BackColor="#FFFF66" BorderColor="Gray" BorderWidth="2px" />
-
-                </asp:Gridview>
+                <asp:GridView runat="server" ID="carList" CssClass="table" BorderColor="Black" BorderWidth="2px">
+                <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
+                </asp:GridView>
             </div>
         </div>
     </div>
 </asp:Content>
-
