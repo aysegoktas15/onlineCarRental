@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="CarRental.View.Admin.Cars" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="CarRental.View.Admin.Cars" EnableEventValidation="false"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">
     <style>
         .form-control {
@@ -75,15 +75,20 @@
                             <label id="ErrorMsg" runat="server"></label>
                             <asp:Button type="submit" id="btnEdit" class="btn btn-warning" text="Edit" runat="server" width="80px"/>
                             <asp:Button type="submit" id="btnAdd" class="btn btn-success" text="Add" runat="server" width="80px" OnClick="btnAdd_Click"/>
-                            <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px"/>
+                            <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px" OnClick="btnDelete_Click"/>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
                 <h1>Car List</h1>
-                <asp:GridView runat="server" ID="carList" CssClass="table" BorderColor="Black" BorderWidth="2px">
-                <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
+                <asp:GridView runat="server" id="carList" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" OnSelectedIndexChanged="carList_SelectedIndexChanged">
+                    <AlternatingRowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
+                    <RowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
+                    <HeaderStyle BackColor="#000000" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
+                    <EditRowStyle BorderColor="Black" BorderWidth="1px" />
+                    <FooterStyle BackColor="#333333" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
+                    <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
                 </asp:GridView>
             </div>
         </div>

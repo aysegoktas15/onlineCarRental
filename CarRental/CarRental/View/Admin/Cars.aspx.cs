@@ -55,8 +55,6 @@ namespace CarRental.View.Admin
             }
         }
 
-
-
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -109,6 +107,64 @@ namespace CarRental.View.Admin
                 throw;
             }
         }
-        
+
+        //string Key = "";
+        protected void carList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cLicenceNumber.Value = carList.SelectedRow.Cells[1].Text;
+            cBrand.Value = carList.SelectedRow.Cells[2].Text;
+            cModel.Value = carList.SelectedRow.Cells[3].Text;
+            cPrice.Value = carList.SelectedRow.Cells[4].Text;
+            cColor.Value = carList.SelectedRow.Cells[5].Text;
+            carAvailibity.SelectedValue = carList.SelectedRow.Cells[6].Text;
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(cLicenceNumber.Value))
+                {
+                    ErrorMsg.InnerText = "MISS THE INFORMATION!";
+                }
+                else
+                {
+                    // Fetch values from form controls
+                    string CarLicenceNumber = cLicenceNumber.Value;
+
+                    // Parameterized query
+                    string CarQuery = "DELETE FROM tblCar WHERE carPlateNumber = @CarLicenceNumber";
+
+                    // Add parameters to the query
+                    var parameters = new Dictionary<string, object>
+                    {
+                        { "@CarLicenceNumber", CarLicenceNumber },
+                    };
+
+                    // Execute the query
+                    int affectedRows = _connection.SetData(CarQuery, parameters);
+
+                    if (affectedRows > 0)
+                    {
+                        // Set the success message
+                        ErrorMsg.InnerText = string.Format("{0} IS DELETED!", CarLicenceNumber);
+                        // Clear form fields
+                        ClearForm();
+                        // Rebind data to GridView
+                        ShowCars();
+                    }
+                    else
+                    {
+                        // Handle the case where no rows were affected
+                        ErrorMsg.InnerText = "No record found to delete.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                ErrorMsg.InnerText = "An error occurred: " + ex.Message;
+            }
+        }
     }
 }
