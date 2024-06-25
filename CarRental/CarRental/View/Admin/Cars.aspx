@@ -72,10 +72,10 @@
                                 </asp:DropDownList>
                             </div>
                             <br><br>
-                            <label id="ErrorMsg" runat="server"></label>
-                            <asp:Button type="submit" id="btnEdit" class="btn btn-warning" text="Edit" runat="server" width="80px"/>
+                            <asp:Button type="submit" id="btnUpdate" class="btn btn-warning" text="Update" runat="server" width="80px" OnClick="btnUpdate_Click"/>
                             <asp:Button type="submit" id="btnAdd" class="btn btn-success" text="Add" runat="server" width="80px" OnClick="btnAdd_Click"/>
-                            <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px" OnClick="btnDelete_Click"/>
+                            <asp:Button type="submit" id="btnDelete" class="btn btn-danger" text="Delete" runat="server" width="80px" OnClick="btnDelete_Click"/> <br /> <br />
+                            <label id="ErrorMsg" runat="server" class="text-danger"></label>
                         </form>
                     </div>
                 </div>

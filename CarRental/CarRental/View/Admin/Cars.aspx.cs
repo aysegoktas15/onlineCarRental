@@ -77,30 +77,49 @@ namespace CarRental.View.Admin
                     string CarColor = cColor.Value;
                     string CarStatus = carAvailibity.SelectedValue;
 
-                    // Parameterized query
-                    string CarQuery = "INSERT INTO tblCar (carPlateNumber, carBrand, carModel, carPrice, carColor, carStatus) " +
-                                      "VALUES (@CarLicenceNumber, @CarBrand, @CarModel, @CarPrice, @CarColor, @CarStatus)";
-
-                    // Add parameters to the query
-                    var parameters = new Dictionary<string, object>
+                    // Check if the car exists in the database
+                    string checkPlateNumber = "SELECT COUNT(1) FROM tblCar WHERE carPlateNumber = @CarLicenceNumber";
+                    var checkParameters = new Dictionary<string, object>
                     {
-                        { "@CarLicenceNumber", CarLicenceNumber },
-                        { "@CarBrand", CarBrand },
-                        { "@CarModel", CarModel },
-                        { "@CarPrice", CarPrice },
-                        { "@CarColor", CarColor },
-                        { "@CarStatus", CarStatus }
+                        { "@CarLicenceNumber", CarLicenceNumber }
                     };
+                    // Check if the car already exists
+                    int carExists = _connection.GetScalar(checkPlateNumber, checkParameters);
 
-                    // Execute the query
-                    _connection.SetData(CarQuery, parameters);
-                    // Set the success message
-                    ErrorMsg.InnerText = string.Format("{0} IS ADDED!", CarLicenceNumber);
-                    // Clear form fields
-                    ClearForm();
-                    // Rebind data to GridView
-                    ShowCars();
+                    if(carExists == 0)
+                    {
+                        // Parameterized query
+                        string carQuery = "INSERT INTO tblCar (carPlateNumber, carBrand, carModel, carPrice, carColor, carStatus) " +
+                                          "VALUES (@CarLicenceNumber, @CarBrand, @CarModel, @CarPrice, @CarColor, @CarStatus)";
+
+                        // Add parameters to the query
+                        var parameters = new Dictionary<string, object>
+                        {
+                            { "@CarLicenceNumber", CarLicenceNumber },
+                            { "@CarBrand", CarBrand },
+                            { "@CarModel", CarModel },
+                            { "@CarPrice", CarPrice },
+                            { "@CarColor", CarColor },
+                            { "@CarStatus", CarStatus }
+                        };
+
+                        // Execute the query
+                        _connection.SetData(carQuery, parameters);
+                        // Set the success message
+                        ErrorMsg.InnerText = string.Format("{0} IS ADDED!", CarLicenceNumber);
+                        // Clear form fields
+                        ClearForm();
+                        // Rebind data to GridView
+                        ShowCars();
+                    }
+                    else
+                    {
+                        // If the car already exists, inform the user
+                        ErrorMsg.InnerText = "Car with the provided license number already exists.";
+                    }
                 }
+
+                    
             }
             catch(Exception)
             {
@@ -164,6 +183,64 @@ namespace CarRental.View.Admin
             {
                 // Log or handle the exception as needed
                 ErrorMsg.InnerText = "An error occurred: " + ex.Message;
+            }
+        }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(cLicenceNumber.Value) ||
+                    string.IsNullOrEmpty(cBrand.Value) ||
+                    string.IsNullOrEmpty(cModel.Value) ||
+                    string.IsNullOrEmpty(cPrice.Value) ||
+                    string.IsNullOrEmpty(cColor.Value))
+                {
+                    ErrorMsg.InnerText = "FILL THE INFORMATION!";
+                }
+                else
+                {
+                    // Fetch values from form controls
+                    string CarLicenceNumber = cLicenceNumber.Value;
+                    string CarBrand = cBrand.Value;
+                    string CarModel = cModel.Value;
+                    int CarPrice = Convert.ToInt32(cPrice.Value);
+                    string CarColor = cColor.Value;
+                    string CarStatus = carAvailibity.SelectedValue;
+
+
+                    // Corrected SQL Update statement
+                    string CarQuery = "UPDATE tblCar SET carBrand = @CarBrand, carModel = @CarModel, carPrice = @CarPrice, carColor = @CarColor, carStatus = @CarStatus " +
+                                      "WHERE carPlateNumber = @CarLicenceNumber";
+
+                    // Add parameters to the query
+                    var parameters = new Dictionary<string, object>
+                    {
+                        { "@CarLicenceNumber", CarLicenceNumber },
+                        { "@CarBrand", CarBrand },
+                        { "@CarModel", CarModel },
+                        { "@CarPrice", CarPrice },
+                        { "@CarColor", CarColor },
+                        { "@CarStatus", CarStatus }
+                    };
+
+                    // Execute the query
+                    _connection.SetData(CarQuery, parameters);
+
+                    // Set the success message
+                    ErrorMsg.InnerText = string.Format("{0} IS UPDATED!", CarLicenceNumber);
+
+                    // Clear form fields
+                    ClearForm();
+
+                    // Rebind data to GridView
+                    ShowCars();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log exception (log to a file, database, etc.)
+                ErrorMsg.InnerText = "An error occurred while updating the car information. Please try again later.";
             }
         }
     }

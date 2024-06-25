@@ -85,5 +85,38 @@ namespace CarRental.Models
             return affectedRows;
         }
 
+        // Method to execute a scalar query and return a single value
+        public int GetScalar(string query, Dictionary<string, object> parameters)
+        {
+            int result = 0;
+
+            using (SqlConnection _connection = new SqlConnection(_connectionStr))
+            {
+                using (SqlCommand command = new SqlCommand(query, _connection))
+                {
+                    foreach (var parameter in parameters)
+                    {
+                        command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                    }
+
+                    try
+                    {
+                        _connection.Open();
+                        result = Convert.ToInt32(command.ExecuteScalar());
+                    }
+                    catch (Exception ex)
+                    {
+                        // Log or handle the exception as needed
+                        throw new Exception("An error occurred while executing the command: " + ex.Message);
+                    }
+                    finally
+                    {
+                        _connection.Close(); // Ensure the connection is closed even if an exception occurs
+                    }
+                }
+            }
+            return result;
+        }
+
     }
 }
