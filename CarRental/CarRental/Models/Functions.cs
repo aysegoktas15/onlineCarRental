@@ -47,29 +47,28 @@ namespace CarRental.Models
             {
                 _connection.Close(); // Ensure the connection is closed even if an exception occurs
             }
-
             return _dataTable; // Return the populated DataTable
         }
 
-        // Method to execute an INSERT, UPDATE, or DELETE query and return the number of affected rows
 
+        // Method to execute an INSERT, UPDATE, or DELETE query and return the number of affected rows
         public int SetData(string query, Dictionary<string, object> parameters)
         {
             int affectedRows = 0;
 
             using (SqlConnection _connection = new SqlConnection(_connectionStr))
             {
-                using (SqlCommand command = new SqlCommand(query, _connection))
+                using (SqlCommand _command = new SqlCommand(query, _connection))
                 {
                     foreach (var parameter in parameters)
                     {
-                        command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                        _command.Parameters.AddWithValue(parameter.Key, parameter.Value);
                     }
 
                     try
                     {
                         _connection.Open();
-                        affectedRows = command.ExecuteNonQuery();
+                        affectedRows = _command.ExecuteNonQuery();
                     }
                     catch (Exception ex)
                     {
@@ -92,17 +91,17 @@ namespace CarRental.Models
 
             using (SqlConnection _connection = new SqlConnection(_connectionStr))
             {
-                using (SqlCommand command = new SqlCommand(query, _connection))
+                using (SqlCommand _command = new SqlCommand(query, _connection))
                 {
                     foreach (var parameter in parameters)
                     {
-                        command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                        _command.Parameters.AddWithValue(parameter.Key, parameter.Value);
                     }
 
                     try
                     {
                         _connection.Open();
-                        result = Convert.ToInt32(command.ExecuteScalar());
+                        result = Convert.ToInt32(_command.ExecuteScalar());
                     }
                     catch (Exception ex)
                     {
@@ -117,6 +116,5 @@ namespace CarRental.Models
             }
             return result;
         }
-
     }
 }

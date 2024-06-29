@@ -16,12 +16,6 @@ namespace CarRental.View.Admin
             _connection = new Models.Functions();
             ShowCars();
         }
-
-        //Add this medhod to solve the error we were getting
-        public override void VerifyRenderingInServerForm(Control control)
-        {
-            
-        }
         private void ClearForm()
         {
             cLicenceNumber.Value = string.Empty;
@@ -30,6 +24,12 @@ namespace CarRental.View.Admin
             cPrice.Value = string.Empty;
             cColor.Value = string.Empty;
             carAvailibity.SelectedIndex = 0; // Assuming the first item is the default selection
+        }
+
+        //Add this medhod to solve the error we were getting
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            
         }
         private void ShowCars()
         {
