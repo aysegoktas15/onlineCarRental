@@ -237,7 +237,7 @@ namespace CarRental.View.Admin
                     ShowCars();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Log exception (log to a file, database, etc.)
                 ErrorMsg.InnerText = "An error occurred while updating the car information. Please try again later.";

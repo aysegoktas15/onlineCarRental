@@ -115,5 +115,14 @@ namespace CarRental.View.Admin
                 throw;
             }
         }
+
+        protected void customerList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            custId.Value = customerList.SelectedRow.Cells[1].Text;
+            custName.Value = customerList.SelectedRow.Cells[2].Text;
+            custAddress.Value = customerList.SelectedRow.Cells[3].Text;
+            custPhone.Value = customerList.SelectedRow.Cells[4].Text;
+            custPassword.Value = customerList.SelectedRow.Cells[5].Text;
+        }
     }
 }
