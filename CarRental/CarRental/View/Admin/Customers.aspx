@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Customers.aspx.cs" Inherits="CarRental.View.Admin.Customers" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Customers.aspx.cs" Inherits="CarRental.View.Admin.Customers" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">
     <style>
@@ -74,7 +74,7 @@
                             <br /><br />
                             <asp:Button type="submit" ID="btnUpdate" class="btn btn-warning" Text="Update" runat="server" Width="80px" />
                             <asp:Button type="submit" ID="btnAdd" class="btn btn-success" Text="Add" runat="server" Width="80px" OnClick="btnAdd_Click" />
-                            <asp:Button type="submit" ID="btnDelete" class="btn btn-danger" Text="Delete" runat="server" Width="80px" />
+                            <asp:Button type="submit" ID="btnDelete" class="btn btn-danger" Text="Delete" runat="server" Width="80px" OnClick="btnDelete_Click" />
                             <br /><br />
                             <label id="ErrorMsg" runat="server" class="text-danger"></label>
                         </div>

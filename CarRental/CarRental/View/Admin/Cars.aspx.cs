@@ -127,7 +127,6 @@ namespace CarRental.View.Admin
             }
         }
 
-        //string Key = "";
         protected void carList_SelectedIndexChanged(object sender, EventArgs e)
         {
             cLicenceNumber.Value = carList.SelectedRow.Cells[1].Text;

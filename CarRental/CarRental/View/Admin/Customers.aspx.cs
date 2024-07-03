@@ -48,11 +48,12 @@ namespace CarRental.View.Admin
                 customerList.DataBind();
             }
         }
+
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
-                if (string.IsNullOrEmpty(custId.Value) || 
+                if (string.IsNullOrEmpty(custId.Value) ||
                     string.IsNullOrEmpty(custName.Value) ||
                     string.IsNullOrEmpty(custAddress.Value) ||
                     string.IsNullOrEmpty(custPhone.Value) ||
@@ -122,7 +123,55 @@ namespace CarRental.View.Admin
             custName.Value = customerList.SelectedRow.Cells[2].Text;
             custAddress.Value = customerList.SelectedRow.Cells[3].Text;
             custPhone.Value = customerList.SelectedRow.Cells[4].Text;
-            custPassword.Value = customerList.SelectedRow.Cells[5].Text;
+            custPassword.Value = customerList.SelectedRow.Cells[5].Text; ;
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(custId.Value))
+                {
+                    ErrorMsg.InnerText = "MISS THE INFORMATION!";
+                }
+                else
+                {
+                    // Fetch values from form controls
+                    string CustomerId = custId.Value;
+
+                    // Parameterized query
+                    string CustomerQuery = "DELETE FROM tblCustomer WHERE customerId = @CustomerId";
+
+                    // Add parameters to the query
+                    var parameters = new Dictionary<string, object>
+                    {
+                        { "@CustomerId", CustomerId },
+                    };
+
+                    // Execute the query
+                    int affectedRows = _connection.SetData(CustomerQuery, parameters);
+
+                    if (affectedRows > 0)
+                    {
+                        // Set the success message
+                        ErrorMsg.InnerText = string.Format("{0} IS DELETED!", CustomerId);
+                        // Clear form fields
+                        ClearForm();
+                        // Rebind data to GridView
+                        ShowCustomers();
+                    }
+                    else
+                    {
+                        // Handle the case where no rows were affected
+                        ErrorMsg.InnerText = "No record found to delete.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                ErrorMsg.InnerText = "An error occurred: " + ex.Message;
+            }
         }
     }
 }
