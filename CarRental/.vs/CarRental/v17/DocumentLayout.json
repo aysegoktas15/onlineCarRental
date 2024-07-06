@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|d:\\0_ayse_goktas_\\01-desktopfiles\\02-works\\01-software\\02-projects\\03-onlinecarrental\\onlinecarrental\\carrental\\carrental\\view\\admin\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\view\\admin\\customers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\carrental\\view\\admin\\cars.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\view\\admin\\cars.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|d:\\0_ayse_goktas_\\01-desktopfiles\\02-works\\01-software\\02-projects\\03-onlinecarrental\\onlinecarrental\\carrental\\carrental\\assets\\css\\loginpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\assets\\css\\loginpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\carrental\\view\\admin\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\view\\admin\\customers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\carrental\\models\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\models\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\carrental\\view\\admin\\cars.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\view\\admin\\cars.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|d:\\0_ayse_goktas_\\01-desktopfiles\\02-works\\01-software\\02-projects\\03-onlinecarrental\\onlinecarrental\\carrental\\carrental\\view\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|solutionrelative:carrental\\view\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D2E68-F6E1-4525-AA98-9A6955793815}|CarRental\\OnlineCarRental.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\carrental\\projectnotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ProjectNotes.cs",
               "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\ProjectNotes.cs",
               "RelativeDocumentMoniker": "CarRental\\ProjectNotes.cs",
@@ -52,68 +44,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cars.aspx",
-              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Cars.aspx",
-              "RelativeDocumentMoniker": "CarRental\\View\\Admin\\Cars.aspx",
-              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Cars.aspx",
-              "RelativeToolTip": "CarRental\\View\\Admin\\Cars.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-30T07:45:11.535Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cars.aspx.cs",
-              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Cars.aspx.cs",
-              "RelativeDocumentMoniker": "CarRental\\View\\Admin\\Cars.aspx.cs",
-              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Cars.aspx.cs",
-              "RelativeToolTip": "CarRental\\View\\Admin\\Cars.aspx.cs",
-              "ViewState": "AQIAALQAAAAAAAAAAAAAAMkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T07:43:04.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Customers.aspx.cs",
-              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Customers.aspx.cs",
-              "RelativeDocumentMoniker": "CarRental\\View\\Admin\\Customers.aspx.cs",
-              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Customers.aspx.cs",
-              "RelativeToolTip": "CarRental\\View\\Admin\\Customers.aspx.cs",
-              "ViewState": "AQIAALQAAAAAAAAAAAAIwMgAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T07:42:53.053Z",
+              "Title": "loginPage.css",
+              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\Assets\\Css\\loginPage.css",
+              "RelativeDocumentMoniker": "CarRental\\Assets\\Css\\loginPage.css",
+              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\Assets\\Css\\loginPage.css",
+              "RelativeToolTip": "CarRental\\Assets\\Css\\loginPage.css",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-06T09:00:15.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Login.aspx",
+              "RelativeDocumentMoniker": "CarRental\\View\\Login.aspx",
+              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Login.aspx",
+              "RelativeToolTip": "CarRental\\View\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-06T08:44:50.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Customers.aspx",
               "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Customers.aspx",
               "RelativeDocumentMoniker": "CarRental\\View\\Admin\\Customers.aspx",
               "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Admin\\Customers.aspx",
               "RelativeToolTip": "CarRental\\View\\Admin\\Customers.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-06-30T07:45:16.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Functions.cs",
-              "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\Models\\Functions.cs",
-              "RelativeDocumentMoniker": "CarRental\\Models\\Functions.cs",
-              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\Models\\Functions.cs",
-              "RelativeToolTip": "CarRental\\Models\\Functions.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAQwFcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T08:22:24.681Z",
               "EditorCaption": ""
             }
           ]
