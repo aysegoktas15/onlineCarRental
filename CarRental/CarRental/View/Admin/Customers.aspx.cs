@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -132,7 +133,7 @@ namespace CarRental.View.Admin
             {
                 if (string.IsNullOrEmpty(custId.Value))
                 {
-                    ErrorMsg.InnerText = "MISS THE INFORMATION!";
+                    ErrorMsg.InnerText = "MISSING THE INFORMATION!";
                 }
                 else
                 {
@@ -171,6 +172,61 @@ namespace CarRental.View.Admin
             {
                 // Log or handle the exception as needed
                 ErrorMsg.InnerText = "An error occurred: " + ex.Message;
+            }
+        }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(custId.Value) ||
+                    string.IsNullOrEmpty(custName.Value) ||
+                    string.IsNullOrEmpty(custAddress.Value) ||
+                    string.IsNullOrEmpty(custPhone.Value) ||
+                    string.IsNullOrEmpty(custPassword.Value))
+                {
+                    ErrorMsg.InnerText = "FILL THE INFORMATION!";
+                }
+                else
+                {
+                    // Fetch values from form controls
+                    string CustomerId = custId.Value;
+                    string CustomerName = custName.Value;
+                    string CustomerAddress = custAddress.Value;
+                    string CustomerPhone = custPhone.Value;
+                    string CustomerPassword = custPassword.Value;
+
+                    // Corrected SQL Update statement
+                    string CustomerQuery = "UPDATE tblCustomer SET customerId = @CustomerId, customerName = @CustomerName, customerAdd = @CustomerAddress, customerPhone = @CustomerPhone, customerPassword = @CustomerPassword " +
+                                      "WHERE customerId = @CustomerId";
+
+                    // Add parameters to the query
+                    var parameters = new Dictionary<string, object>
+                    {
+                        { "@CustomerId", CustomerId },
+                        { "@CustomerName", CustomerName },
+                        { "@CustomerAddress", CustomerAddress },
+                        { "@CustomerPhone", CustomerPhone },
+                        { "@CustomerPassword", CustomerPassword }
+                    };
+
+                    // Execute the query
+                    _connection.SetData(CustomerQuery, parameters);
+
+                    // Set the success message
+                    ErrorMsg.InnerText = string.Format("{0} IS UPDATED!", CustomerId);
+
+                    // Clear form fields
+                    ClearForm();
+
+                    // Rebind data to GridView
+                    ShowCustomers();
+                }
+            }
+            catch (Exception)
+            {
+                // Log exception (log to a file, database, etc.)
+                ErrorMsg.InnerText = "An error occurred while updating the car information. Please try again later.";
             }
         }
     }

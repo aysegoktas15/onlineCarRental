@@ -72,7 +72,7 @@
                                 <input type="password" class="form-control" id="custPassword" placeholder="Enter the customer password" runat="server">
                             </div>
                             <br /><br />
-                            <asp:Button type="submit" ID="btnUpdate" class="btn btn-warning" Text="Update" runat="server" Width="80px" />
+                            <asp:Button type="submit" ID="btnUpdate" class="btn btn-warning" Text="Update" runat="server" Width="80px" OnClick="btnUpdate_Click" />
                             <asp:Button type="submit" ID="btnAdd" class="btn btn-success" Text="Add" runat="server" Width="80px" OnClick="btnAdd_Click" />
                             <asp:Button type="submit" ID="btnDelete" class="btn btn-danger" Text="Delete" runat="server" Width="80px" OnClick="btnDelete_Click" />
                             <br /><br />
