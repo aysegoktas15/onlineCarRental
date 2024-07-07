@@ -1,8 +1,12 @@
-﻿body {
+﻿* {
+    background-color: orange;
+}
+body {
+    background-color:blue;
 }
 .login-form {
-    padding-top : 200px;
+    margin-top : 50px;
 }
-.login-form h3 {
+#login-text h3 {
     text-align:center;
 }
