@@ -81,8 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Css\loginPage.css" />
-    <Content Include="Assets\Images\Cars\car.png" />
     <Content Include="Assets\Images\Cars\car-regular-240.png" />
+    <Content Include="Assets\Images\Cars\car.png" />
     <Content Include="Assets\Images\Cars\car1-mercedes-bez-coope.jpg" />
     <Content Include="Assets\Images\Cars\car2-volvo-stationWagon.jpg" />
     <Content Include="Assets\Images\Cars\car3-hyundai-sport-utility-vehicle-suv.jpg" />

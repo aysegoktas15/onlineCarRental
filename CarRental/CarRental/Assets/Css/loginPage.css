@@ -5,8 +5,9 @@ body {
     background-color:blue;
 }
 .login-form {
-    margin-top : 50px;
+    padding-top : 10px;
 }
-#login-text h3 {
+.head-div {
     text-align:center;
+    padding-top:20px;
 }

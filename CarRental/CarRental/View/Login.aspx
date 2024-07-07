@@ -13,17 +13,19 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <div class="row mt-5 ">
+                <%--<div class="row mt-5 ">
                     <div class="col"></div>
                     <div id="login-text" class="col">
-                        <img src="../Assets/Images/Cars/car.png" />
-                        <h3>Login Page</h3>
+                        
                     </div>
                     <div class="col"></div>
-                </div>
+                </div>--%>
 
                 <form class="login-form" runat="server">
-                    
+                    <div class="head-div">
+                        <img src="../Assets/Images/Cars/car.png" width="420px" />
+                        <h3>Login Page</h3>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
