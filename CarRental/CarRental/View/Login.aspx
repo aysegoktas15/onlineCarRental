@@ -13,17 +13,17 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <%--<div class="row mt-5 ">
+                <!--<div class="row mt-5 ">
                     <div class="col"></div>
                     <div id="login-text" class="col">
                         
                     </div>
                     <div class="col"></div>
-                </div>--%>
+                </div>-->
 
                 <form class="login-form" runat="server">
                     <div class="head-div">
-                        <img src="../Assets/Images/Cars/car.png" width="420px" />
+                        <img src="../Assets/Images/Cars/car.png" />
                         <h3>Login Page</h3>
                     </div>
                     <div class="mb-3">
@@ -39,7 +39,9 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-check d-grid ">
+                         <button type="submit" class="btn">LOGIN</button>
+                    </div>
                 </form>
             </div>
             <div class="col-md-4"></div>

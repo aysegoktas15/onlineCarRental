@@ -1,13 +1,19 @@
 ﻿* {
-    background-color: orange;
+    background-color:lemonchiffon;
 }
 body {
     background-color:blue;
 }
 .login-form {
-    padding-top : 10px;
+    padding-top : 50px;
 }
 .head-div {
     text-align:center;
-    padding-top:20px;
+    padding-top:30px;
+}
+.head-div img {
+    width:420px;
+}
+.btn {
+    background-color:grey;
 }
