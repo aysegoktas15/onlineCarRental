@@ -17,3 +17,7 @@ body {
 .btn {
     background-color:grey;
 }
+.form-link-label {
+    display: inline-block;
+    padding-right: 12px;
+}
