@@ -125,6 +125,7 @@
     <Content Include="View\Admin\Rentals.aspx" />
     <Content Include="View\Admin\Returns.aspx" />
     <Content Include="View\LoginPage.aspx" />
+    <Content Include="View\ToBeUserPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="View\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ToBeUserPage.aspx.cs">
+      <DependentUpon>ToBeUserPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ToBeUserPage.aspx.designer.cs">
+      <DependentUpon>ToBeUserPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

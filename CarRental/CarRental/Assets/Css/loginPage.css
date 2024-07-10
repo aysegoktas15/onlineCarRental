@@ -19,5 +19,9 @@ body {
 }
 .form-link-label {
     display: inline-block;
+    padding-right: 12px;   
+}
+.form-link-user{
+    display: inline-block;
     padding-right: 12px;
 }

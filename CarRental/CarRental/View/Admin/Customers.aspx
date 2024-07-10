@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Customers.aspx.cs" Inherits="CarRental.View.Admin.Customers" EnableEventValidation="false" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="myBody" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <style>
         .form-control {
             width: 100%;

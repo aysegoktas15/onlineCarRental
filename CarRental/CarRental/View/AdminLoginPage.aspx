@@ -20,22 +20,23 @@
                     </div>
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Admin Email Address</label>
-                        <input type="email" class="form-control" id="adminMail" aria-describedby="emailHelp" />
+                        <input type="email" class="form-control" id="adminMail" aria-describedby="emailHelp" runat="server" />
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Admin Password</label>
-                        <input type="password" class="form-control" id="adminPassword" />
+                        <input type="password" class="form-control" id="adminPassword" runat="server" />
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" />
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                         <div class="col text-end">
-                            <a href="LoginPage.aspx" class="form-link-label" id="userLink" runat="server">User Entrance</a>
+                            <a href="LoginPage.aspx" class="form-link-label" id="link1" runat="server" >User Entrance</a>
+                            <a href="ToBeUserPage.aspx" class="form-link-label" id="link2" runat="server" >Register</a>
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <button type="submit" class="btn">LOGIN</button>
+                        <asp:Button type="submit" id="btnLoginAdmin" CssClass="btn" Text="LOGIN" runat="server" />
                     </div>
                 </form>
             </div>

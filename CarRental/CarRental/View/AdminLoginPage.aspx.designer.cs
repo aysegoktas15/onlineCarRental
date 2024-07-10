@@ -15,6 +15,24 @@ namespace CarRental.View
     {
 
         /// <summary>
+        /// adminMail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl adminMail;
+
+        /// <summary>
+        /// adminPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword adminPassword;
+
+        /// <summary>
         /// rememberMe control.
         /// </summary>
         /// <remarks>
@@ -24,12 +42,30 @@ namespace CarRental.View
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox rememberMe;
 
         /// <summary>
-        /// userLink control.
+        /// link1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor userLink;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor link1;
+
+        /// <summary>
+        /// link2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor link2;
+
+        /// <summary>
+        /// btnLoginAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLoginAdmin;
     }
 }
