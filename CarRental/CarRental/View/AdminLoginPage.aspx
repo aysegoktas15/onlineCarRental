@@ -21,7 +21,7 @@
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Admin Email Address</label>
                         <input type="email" class="form-control" id="adminMail" aria-describedby="emailHelp" runat="server" />
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div id="userHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Admin Password</label>

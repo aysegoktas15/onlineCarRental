@@ -19,9 +19,21 @@
                         <h3>Register Page</h3>
                     </div>
                     <div class="mb-3">
-                        <label for="inputUserEmail" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="userMail" aria-describedby="emailHelp" runat="server" />
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="inputUserNumber" class="form-label">Customer Number</label>
+                        <input type="text" class="form-control" id="userId" aria-describedby="numberHelp" runat="server" />
+                        <div id="userHelp" class="form-text">Please enter your licence number</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputUserName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="userName" runat="server" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputUserAddress" class="form-label">Customer Address</label>
+                        <input type="text" class="form-control" id="userAddress" runat="server" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputUserPhone" class="form-label">Customer Phone</label>
+                        <input type="text" class="form-control" id="userPhone" runat="server" />
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Password</label>
@@ -36,7 +48,7 @@
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                         <div class="col text-end">
                             <a href="AdminLoginPage.aspx" class="form-link-label" id="link1" runat="server">Admin Entrance</a>
-                            <a href="LoginPage.aspx"class="form-link-label" id="link2" runat="server">User Entrance</a>
+                            <a href="LoginPage.aspx" class="form-link-label" id="link2" runat="server">User Entrance</a>
                         </div>
                     </div>
                     <div class="form-group d-grid ">

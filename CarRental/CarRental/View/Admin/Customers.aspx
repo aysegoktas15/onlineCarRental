@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col form-info">
                             <div class="customerForm-Group">
-                                <label for="customerId">Customer No</label>
+                                <label for="customerNumber">Customer Number</label>
                                 <input type="text" class="form-control" id="custId" placeholder="Enter the customer no" runat="server">
                             </div>
                             <div class="customerForm-Group">

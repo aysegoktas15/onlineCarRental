@@ -19,9 +19,8 @@
                         <h3>Login Page</h3>
                     </div>
                     <div class="mb-3">
-                        <label for="inputUsername" class="form-label">Customer Username</label>
-                        <input type="email" class="form-control" id="userMail" aria-describedby="emailHelp" runat="server" />
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="inputUsername" class="form-label">Customer Number</label>
+                        <input type="text" class="form-control" id="userId" aria-describedby="numberHelp" runat="server" />
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Customer Password</label>
