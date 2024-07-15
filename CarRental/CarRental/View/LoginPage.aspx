@@ -19,15 +19,15 @@
                         <h3>Login Page</h3>
                     </div>
                     <div class="mb-3">
-                        <label for="inputUsername" class="form-label">Customer Number</label>
-                        <input type="text" class="form-control" id="userId" aria-describedby="numberHelp" runat="server" />
+                        <label for="inputId" class="form-label">Customer Number</label>
+                        <input type="text" class="form-control" id="userId" aria-describedby="numberHelp" runat="server" required="required" />
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Customer Password</label>
-                        <input type="password" class="form-control" id="userPassword" runat="server" />
+                        <input type="password" class="form-control" id="userPassword" runat="server" required="required" />
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" />
+                        <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" required="required" />
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                         <div class="col text-end">
                             <a href="AdminLoginPage.aspx" class="form-link-label" id="link1" runat="server">Admin Entrance</a>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" />
+                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
                     </div>
                 </form>
             </div>

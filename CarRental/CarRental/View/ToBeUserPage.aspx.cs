@@ -9,7 +9,13 @@ namespace CarRental.View
 {
     public partial class ToBeUserPage : System.Web.UI.Page
     {
+        Models.Functions _connection;
         protected void Page_Load(object sender, EventArgs e)
+        {
+            _connection = new Models.Functions();
+        }
+
+        protected void btnLoginUser_Click(object sender, EventArgs e)
         {
 
         }

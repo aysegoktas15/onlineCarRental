@@ -1,45 +1,54 @@
 ﻿* {
+    --firstBg-color:#e5aa78;
+    --secondBg-color:#f3b785;
+    --firstTxt-color:#000;
+    --secondTxt-color:#808080;
+    --btnBg-color:#c7a896;
 }
-
 body {
-    background-color: lemonchiffon;
+    background-color: var(--firstBg-color);
+    color:var(--firstTxt-color)
 }
-
+.form-control {
+    background-color: var(--secondBg-color);
+    color: var(--secondTxt-color);
+}
+form-control:hover {
+    outline: 2px solid red; /* Odak göstergesini kırmızı yapar */
+    outline-offset: 2px; /* Göstergenin inputun dışına çıkmasını sağlar */
+}
 .login-form {
     padding-top: 50px;
 }
-
 .head-div {
     text-align: center;
     padding-top: 30px;
 }
-
-    .head-div img {
-        width: 420px;
-    }
-
-.btn {
-    background-color: grey;
+.head-div img {
+    width: 420px;
+}
+.form-group, .link-container {
+    background-color: var(--btnBg-color);
+    color:var(--firstTxt-color);
 }
 .checkbox-container {
     display: flex;
     align-items: center;
 }
-
 .link-container {
     display: flex;
-    justify-content: flex-end;
+    /*    justify-content: flex-end;*/
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     flex-direction: column;
 }
-
 .mb-3.form-check {
     display: flex;
     align-items: flex-start;
     margin-right: auto;
     flex-direction: row;
 }
-
 .form-link-label {
     border: solid 1px;
     border-color: lightslategray;
@@ -56,9 +65,12 @@ body {
     line-height: normal;
     text-align: center;
 }
-
 #rememberMe {
     margin-right: 5px;
     width: 20px;
     height: 20px;
+}
+.form-group:hover {
+    background-color:var(--secondBg-color);
+    transform:scale(1.2);
 }

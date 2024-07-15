@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="CarRental.View.Admin.AdminMaster1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="CarRental.View.Customer.CustomerMaster" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,6 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css" /> <!--Add this -->
-
 </head>
 <body>
 
@@ -22,22 +21,14 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="HomePage.aspx">Home Page</a>
+          <a class="nav-link active" aria-current="page" href="HomePage.aspx">Cars</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Cars.aspx">Cars</a>
+          <a class="nav-link" href="Cars.aspx">Pending Rents</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Customers.aspx">Customers</a>
+          <a class="nav-link" href="Customers.aspx">Logout</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Rentals.aspx">Rentals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Returns.aspx">Returns</a>
-        </li>
-
-          
 
       </ul>
     </div>

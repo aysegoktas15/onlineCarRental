@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" />
+                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
                     </div>
                 </form>
             </div>
