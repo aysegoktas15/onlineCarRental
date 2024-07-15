@@ -60,8 +60,11 @@
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
+                        <asp:Button type="submit" id="btnLogin" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
                     </div>
+                    <br />
+                    <br />
+                    <label id="lblMsg" runat="server" class="text-danger"></label>
                 </form>
             </div>
             <div class="col-md-4"></div>

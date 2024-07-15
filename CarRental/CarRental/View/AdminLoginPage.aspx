@@ -16,7 +16,7 @@
             <div class="col-md-4">
                 <form class="login-form" runat="server">
                     <div class="head-div">
-                        <img src="../Assets/Images/Cars/car.png"/>
+                        <img src="../Assets/Images/Cars/car.png" />
                         <h3>Admin Login Page</h3>
                     </div>
                     <div class="mb-3">
@@ -31,15 +31,20 @@
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" required="required" />
                         <label class="form-check-label" for="rememberMe">Remember me</label>
-                        <div class="col text-end">
-                            <a href="LoginPage.aspx" class="form-link-label" id="link1" runat="server" >User Entrance</a>
-                            <a href="ToBeUserPage.aspx" class="form-link-label" id="link2" runat="server" >Register</a>
+                        <div class="link-container text-end">
+                            <div class="links">
+                                <a href="AdminLoginPage.aspx" class="form-link-label" id="link1" runat="server">User Entrance</a>
+                            </div>
+                            <div class="links">
+                                <a href="ToBeUserPage.aspx" class="form-link-label" id="link2" runat="server">Register</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <asp:Button type="submit" id="btnLoginAdmin" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginAdmin_Click" />
+                        <asp:Button type="submit" id="btnLogin" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginAdmin_Click" />
                     </div>
-                    <br /> <br />
+                    <br />
+                    <br />
                     <label id="lblMsg" runat="server" class="text-danger"></label>
                 </form>
             </div>

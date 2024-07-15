@@ -29,14 +29,21 @@
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" required="required" />
                         <label class="form-check-label" for="rememberMe">Remember me</label>
-                        <div class="col text-end">
-                            <a href="AdminLoginPage.aspx" class="form-link-label" id="link1" runat="server">Admin Entrance</a>
-                            <a href="AdminLoginPage.aspx" class="form-link-label" id="link2" runat="server">Register</a>
+                        <div class="link-container text-end">
+                            <div class="links">
+                                <a href="AdminLoginPage.aspx" class="form-link-label" id="link1" runat="server">Admin Entrance</a>
+                            </div>
+                            <div class="links">
+                                <a href="ToBeUserPage.aspx" class="form-link-label" id="link2" runat="server">Register</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group d-grid ">
-                        <asp:Button type="submit" ID="btnLoginUser" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
+                        <asp:Button type="submit" id="btnLogin" CssClass="btn" Text="LOGIN" runat="server" OnClick="btnLoginUser_Click" />
                     </div>
+                    <br />
+                    <br />
+                    <label id="lblMsg" runat="server" class="text-danger"></label>
                 </form>
             </div>
             <div class="col-md-4"></div>
