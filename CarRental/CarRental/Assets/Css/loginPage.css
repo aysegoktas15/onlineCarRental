@@ -46,7 +46,7 @@ form-control:hover {
 
 #btnLogin:hover {
     background-color: var(--secondBg-color);
-    transform: scaleY(.5);
+    transform: scaleY(1.2);
 }
 
 .checkbox-container {
