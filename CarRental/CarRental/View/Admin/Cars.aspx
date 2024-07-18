@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-md-8">
                     <h1>Car List</h1>
-                    <asp:GridView ID="carList" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" OnSelectedIndexChanged="carList_SelectedIndexChanged" runat="server">
+                    <asp:GridView id="carList" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" OnSelectedIndexChanged="carList_SelectedIndexChanged" runat="server">
                         <AlternatingRowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
                         <RowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
                         <HeaderStyle BackColor="#000000" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
