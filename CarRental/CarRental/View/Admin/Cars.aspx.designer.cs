@@ -60,13 +60,13 @@ namespace CarRental.View.Admin
         protected global::System.Web.UI.HtmlControls.HtmlInputText cColor;
 
         /// <summary>
-        /// carAvailibity control.
+        /// carAvailability control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList carAvailibity;
+        protected global::System.Web.UI.WebControls.DropDownList carAvailability;
 
         /// <summary>
         /// btnUpdate control.

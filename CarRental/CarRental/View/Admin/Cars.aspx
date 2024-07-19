@@ -73,7 +73,7 @@
                             </div>
                             <div class="carForm-Group">
                                 <label for="carAvailable">Available</label><br />
-                                <asp:DropDownList class="form-control" id="carAvailibity" runat="server">
+                                <asp:DropDownList class="form-control" id="carAvailability" runat="server">
                                     <asp:ListItem>Available</asp:ListItem>
                                     <asp:ListItem>Booked</asp:ListItem>
                                 </asp:DropDownList>

@@ -23,7 +23,7 @@ namespace CarRental.View.Admin
             cModel.Value = string.Empty;
             cPrice.Value = string.Empty;
             cColor.Value = string.Empty;
-            carAvailibity.SelectedIndex = 0; // Assuming the first item is the default selection
+            carAvailability.SelectedIndex = 0; // Assuming the first item is the default selection
         }
 
         //Add this medhod to solve the error we were getting
@@ -75,7 +75,7 @@ namespace CarRental.View.Admin
                     string CarModel = cModel.Value;
                     int CarPrice = Convert.ToInt32(cPrice.Value.ToString());
                     string CarColor = cColor.Value;
-                    string CarStatus = carAvailibity.SelectedValue;
+                    string CarStatus = carAvailability.SelectedValue;
 
                     // Check if the car exists in the database
                     string checkPlateNumber = "SELECT COUNT(1) FROM tblCar WHERE carPlateNumber = @CarLicenceNumber";
@@ -134,7 +134,7 @@ namespace CarRental.View.Admin
             cModel.Value = carList.SelectedRow.Cells[3].Text;
             cPrice.Value = carList.SelectedRow.Cells[4].Text;
             cColor.Value = carList.SelectedRow.Cells[5].Text;
-            carAvailibity.SelectedValue = carList.SelectedRow.Cells[6].Text;
+            carAvailability.SelectedValue = carList.SelectedRow.Cells[6].Text;
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace CarRental.View.Admin
                     string CarModel = cModel.Value;
                     int CarPrice = Convert.ToInt32(cPrice.Value);
                     string CarColor = cColor.Value;
-                    string CarStatus = carAvailibity.SelectedValue;
+                    string CarStatus = carAvailability.SelectedValue;
 
 
                     // Corrected SQL Update statement

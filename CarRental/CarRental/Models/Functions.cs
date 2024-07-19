@@ -7,6 +7,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.DynamicData;
 
 namespace CarRental.Models
 {
@@ -29,14 +30,24 @@ namespace CarRental.Models
         }
 
         // Method to execute a SELECT query and return the results in a DataTable
-        public DataTable GetData (string Query)
+        public DataTable GetData (string Query, SqlParameter[] parameters = null )
         {
             _dataTable = new DataTable();
             try
             {
-                _connection.Open(); // Open the connection
-                _adapter = new SqlDataAdapter(Query, _connection);
-                _adapter.Fill(_dataTable); // Fill the DataTable with the results of the query
+                using (SqlCommand cmd = new SqlCommand(Query, _connection))
+                {
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+
+                    _connection.Open();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(_dataTable);
+                    }
+                }
             }
             catch (Exception ex)
             {
