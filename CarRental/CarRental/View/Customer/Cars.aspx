@@ -8,32 +8,39 @@
             padding-top: 50px;
             flex-direction: row;
         }
+        #car-box {
+            background-color:grey;
+            width:200px;
+            height:200px;
+            border-radius:0;
+            border:2px;
+        }
+        .form-control {
 
+        }
     </style>
 
     <div class="container-fluid">
+
         <div class="row">
-            <div></div>
-            <div>Image Here</div>
-            <div></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3" id="car-box">Image Here</div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
         </div>
+
         <div class="row">
-            <div></div>
-            <div>Available Cars</div>
-            <div></div>
+            <div class="col-md-3"></div>
+            <div class="col"></div>
+            
         </div>
+
         <div class="row">
             <div class="col">
                 Content Here
                 <form runat="server" id="carSearch">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 form-section">
-                            <asp:DropDownList class="form-control" ID="carAvailability" runat="server">
-                                <asp:ListItem>Available</asp:ListItem>
-                                <asp:ListItem>Booked</asp:ListItem>
-                            </asp:DropDownList>
-                            <asp:Button type="submit" ID="btnSearch" class="btn btn-warning" Text="Search" runat="server" Width="80px" OnClick="btnSearch_Click" />
-                        </div>
+                       
 
                         <div class="col-md-6 col-sm-12 grid-section">
                             <h3>Car List</h3>

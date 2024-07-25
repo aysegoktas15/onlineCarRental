@@ -16,7 +16,7 @@ namespace CarRental.View.Customer
         protected void Page_Load(object sender, EventArgs e)
         {
             _connection = new Models.Functions();
-            //ShowCars();
+            ShowCars();
         }
         /*
         private void ClearForm()
@@ -37,40 +37,12 @@ namespace CarRental.View.Customer
         }
         private void ShowCars()
         {
-            string CarAvailability = carAvailability.SelectedValue;
+            string carAvailability = "Available";
 
             // Define your query
-            string query = "SELECT * FROM tblCar WHERE carStatus = @CarAvailability";
-
-            SqlParameter[] parameters = new SqlParameter[]
-            {
-                new SqlParameter("@CarAvailability", CarAvailability)
-            };
-
-
-            // Fetch data from the database
-            DataTable carData = _connection.GetData(query,parameters);
-
-
-            // Check if data is retrieved successfully
-            if (carData != null && carData.Rows.Count > 0)
-            {
-                // Bind data to the GridView or appropriate control
-                carList.DataSource = carData;
-                carList.DataBind();
-
-            }
-            else
-            {
-                carList.DataSource = null;
-                carList.EmptyDataText = "No cars available.";
-                carList.DataBind();
-            }
-        }
-
-        protected void btnSearch_Click(object sender, EventArgs e)
-        {
-            ShowCars();
+            string query = "SELECT * FROM tblCar WHERE carStatus ='" + carAvailability + "'";
+            carList.DataSource = _connection.GetData(query);
+            carList.DataBind();
         }
     }
 }

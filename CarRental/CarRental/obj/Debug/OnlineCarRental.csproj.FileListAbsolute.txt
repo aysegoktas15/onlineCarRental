@@ -58,7 +58,6 @@ D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarR
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\bin\System.Net.Http.Formatting.xml
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\bin\System.Web.Http.xml
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\bin\System.Web.Http.WebHost.xml
-D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\obj\Debug\OnlineCarRental.csproj.AssemblyReference.cache
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\obj\Debug\OnlineCarRental.csproj.CoreCompileInputs.cache
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\03-OnlineCarRental\onlineCarRental\CarRental\CarRental\obj\Debug\OnlineCa.4E99B272.Up2Date

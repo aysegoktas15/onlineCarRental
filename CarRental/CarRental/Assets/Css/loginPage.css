@@ -33,8 +33,7 @@ form-control:hover {
     width: 420px;
  }
 
-.form-group, .link-container {
-    background-color: var(--btnBg-color);
+.form-group {
     color: var(--firstTxt-color);
 }
 #btnLogin {
@@ -80,9 +79,10 @@ form-control:hover {
     height: 25px;
     width: 200px;
     text-decoration: none;
-    padding: 0 10px;
-    margin-bottom: 5px;
-    color: white;
+    /*padding: 0 10px;*/
+    padding:0 20px;
+    margin-bottom: 8px;
+    color: var(--firstTxt-color);
     line-height: normal;
     text-align: center;
 }
