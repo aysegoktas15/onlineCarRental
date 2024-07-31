@@ -12,6 +12,7 @@ namespace CarRental.View.Customer
 {
     public partial class Cars : System.Web.UI.Page
     {
+        //Customer Module
         Models.Functions _connection;
         protected void Page_Load(object sender, EventArgs e)
         {
