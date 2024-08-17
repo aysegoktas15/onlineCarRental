@@ -45,5 +45,7 @@ namespace CarRental.View.Customer
             carList.DataSource = _connection.GetData(query);
             carList.DataBind();
         }
+
+
     }
 }

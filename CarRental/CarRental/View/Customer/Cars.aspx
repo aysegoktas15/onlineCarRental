@@ -10,11 +10,7 @@
         }
 
         #car-box {
-            background-color: grey;
-            width: 200px;
-            height: 200px;
-            border-radius: 0;
-            border: 2px;
+            /*background-color: grey;*/
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,7 +37,9 @@
     <div class="container-fluid">
         <div class="row top-image">
             <div class="col-md-4"></div>
-            <div class="mx-auto" id="car-box">Image Here</div>
+            <div class="mx-auto" id="car-box">
+                <img src="../../Assets/Images/Cars/sportsCar2.jpg" />
+            </div>
             <div class="col-md-4"></div>
         </div>
         <div class="row">
@@ -69,7 +67,24 @@
                                 <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
                             </asp:GridView>
                         </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-2"> <label for="inputDate" class="form-label">Rent Date : </label></div>
+                            <div class="col-8">
+                                
+                                <input type="date" class="form-control" id="rentDate" runat="server" required="required" />
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <asp:Button type="submit" ID="btnBook" class="btn btn-warning" Text="Book" runat="server" Width="80px" />
+                            </div>
+                        </div>
                     </div>
+
                 </form>
             </div>
             <div class=" col-sm-1 col-md-2 col-lg-3"></div>

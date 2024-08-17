@@ -93,6 +93,7 @@
     <Content Include="Assets\Images\Cars\car7-volkswagen-golf-hatchback.jpg" />
     <Content Include="Assets\Images\Cars\car8-chevrolet-corvette-sportscar.jpg" />
     <Content Include="Assets\Images\Cars\sportsCar1.jpg" />
+    <Content Include="Assets\Images\Cars\sportsCar2.jpg" />
     <Content Include="Assets\Images\Users\user-regular-240.png" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.min.css" />
@@ -125,6 +126,7 @@
     <Content Include="View\Admin\HomePage.aspx" />
     <Content Include="View\Admin\Rentals.aspx" />
     <Content Include="View\Admin\Returns.aspx" />
+    <Content Include="View\Admin\sportsCar2.jpg" />
     <Content Include="View\Customer\Cars.aspx" />
     <Content Include="View\LoginPage.aspx" />
     <Content Include="View\ToBeUserPage.aspx" />
