@@ -39,8 +39,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T09:53:24.572Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -48,8 +47,8 @@
               "Title": "Cars.aspx",
               "DocumentMoniker": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Customer\\Cars.aspx",
               "RelativeDocumentMoniker": "CarRental\\View\\Customer\\Cars.aspx",
-              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Customer\\Cars.aspx*",
-              "RelativeToolTip": "CarRental\\View\\Customer\\Cars.aspx*",
+              "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\03-OnlineCarRental\\onlineCarRental\\CarRental\\CarRental\\View\\Customer\\Cars.aspx",
+              "RelativeToolTip": "CarRental\\View\\Customer\\Cars.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-07-19T08:55:31.607Z",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "CarRental\\Models\\Functions.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwCUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T08:39:59.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T08:39:59.198Z"
             }
           ]
         }

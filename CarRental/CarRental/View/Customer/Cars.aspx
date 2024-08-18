@@ -4,9 +4,9 @@
     <style>
         #carSearch {
             display: flex;
-            align-items: baseline;
+            flex-direction: column;
             padding-top: 50px;
-            flex-direction: row;
+            align-items: center;
         }
 
         #car-box {
@@ -27,11 +27,49 @@
         .grid-section {
             display: flex;
             justify-content: center;
+            width: 100%;
         }
 
         .table-grid {
             width: 100%;
         }
+
+        .btn-book {
+            padding-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        .rent-date {
+            padding-bottom: 20px;
+        }
+
+        /* Tarih Girdisinin Genel Stili */
+        input[type="date"] {
+            width: 100%; /* Genişlik ayarı */
+            padding: 10px; /* İç boşluk */
+            border: 2px solid #ccc; /* Kenarlık rengi ve kalınlığı */
+            border-radius: 5px; /* Kenar yuvarlama */
+            background-color: #fff; /* Arka plan rengi */
+            font-size: 16px; /* Yazı tipi boyutu */
+            color: #000000; /* Yazı rengi */
+            border-color: #000002;
+            text-align:right;
+        }
+            /* Hover Durumunda Stili */
+            input[type="date"]:hover {
+                border-color: #888; /* Kenarlık rengi */
+            }
+            /* Fokuslanıldığında Stili */
+            input[type="date"]:focus {
+                border-color: #ffd800; /* Fokuslanıldığında kenarlık rengi */
+                outline: none; /* Fokuslanıldığında kenar çizgisini kaldır */
+            }
     </style>
 
     <div class="container-fluid">
@@ -53,41 +91,39 @@
             </div>
         </div>
         <div class="row">
-            <div class=" col-sm-1 col-md-2 col-lg-3"></div>
-            <div class=" col-sm-10 col-md-8 col-lg-6">
+            <div class=" col-12 ">
                 <form runat="server" id="carSearch">
-                    <div class="row">
-                        <div class="col-12 grid-section">
-                            <asp:GridView ID="carList" class="table-grid" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" runat="server">
-                                <AlternatingRowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
-                                <RowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
-                                <HeaderStyle BackColor="#000000" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
-                                <EditRowStyle BorderColor="Black" BorderWidth="1px" />
-                                <FooterStyle BackColor="#333333" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
-                                <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
-                            </asp:GridView>
+                    <div class="row grid-section">
+                        <asp:GridView ID="carList" class="table-grid" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" runat="server">
+                            <AlternatingRowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
+                            <RowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
+                            <HeaderStyle BackColor="#000000" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
+                            <EditRowStyle BorderColor="Black" BorderWidth="1px" />
+                            <FooterStyle BackColor="#333333" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
+                            <SelectedRowStyle BorderColor="Black" BorderWidth="4px" />
+                        </asp:GridView>
+                    </div>
+                    <div class="row rent-date">
+                        <div class="col-4">
+                            <label for="inputDate" class="form-label">Rent Start Date : </label>
                         </div>
-                        <div class="row">
-                            <div class="col-2"></div>
-                            <div class="col-2"> <label for="inputDate" class="form-label">Rent Date : </label></div>
-                            <div class="col-8">
-                                
-                                <input type="date" class="form-control" id="rentDate" runat="server" required="required" />
-                            </div>
-                        </div>
-                        <div class="row"></div>
-                        <div class="row">
-                            <div class="col-2"></div>
-                            <div class="col-8"></div>
-                            <div class="col-2">
-                                <asp:Button type="submit" ID="btnBook" class="btn btn-warning" Text="Book" runat="server" Width="80px" />
-                            </div>
+                        <div class="col-8">
+                            <input type="date" class="form-control" id="rentStartDate" runat="server" required="required" />
                         </div>
                     </div>
-
+                    <div class="row rent-date">
+                        <div class="col-4">
+                            <label for="inputDate" class="form-label">Rent End Date : </label>
+                        </div>
+                        <div class="col-8">
+                            <input type="date" class="form-control" id="rentEndDate" runat="server" required="required" />
+                        </div>
+                    </div>
+                    <div class="row btn-book">
+                        <asp:Button type="submit" ID="btnBook" class="btn btn-warning" Text="Book" runat="server" />
+                    </div>
                 </form>
             </div>
-            <div class=" col-sm-1 col-md-2 col-lg-3"></div>
         </div>
     </div>
 </asp:Content>
