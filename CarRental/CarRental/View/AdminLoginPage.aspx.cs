@@ -15,18 +15,23 @@ namespace CarRental.View
         Models.Functions _connection;
         protected void Page_Load(object sender, EventArgs e)
         {
-            _connection = new Models.Functions();
+            //_connection = new Models.Functions();
+            if (!IsPostBack)
+            {
+                _connection = new Models.Functions();
+            }
         }
         public static string AName = "";
 
         protected void btnLoginAdmin_Click(object sender, EventArgs e)
         {
-            string sql = "select adminMail,adminPassword from tblAdmin where adminMail = '{0}' and adminPassword= '{3}'";
-            sql = string.Format(sql, adminMail.Value, adminPassword.Value);
+            string sql = "select aMail,aPassword from tblAdmin where adminMail = '{0}' and adminPassword= '{3}'";
+            // string sql = "select adminMail,adminPassword from tblAdmin where adminMail = '{0}' and adminPassword= '{3}'";
+            sql = string.Format(sql, aMail.Value, aPassword.Value);
             DataTable dt = _connection.GetData(sql);
             if(dt.Rows.Count == 0)
             {
-                lblMsg.InnerText = "Invalid Admid ! ";
+                lblMsg.InnerText = "Invalid Admin ! ";
             }
             else
             {

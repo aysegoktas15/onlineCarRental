@@ -21,12 +21,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Admin Email Address</label>
-                        <input type="email" class="form-control" id="adminMail" aria-describedby="emailHelp" runat="server" required="required" />
+                        <input type="email" class="form-control" id="aMail" aria-describedby="emailHelp" runat="server" required="required" />
                         <div id="userHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="inputPassword" class="form-label">Admin Password</label>
-                        <input type="password" class="form-control" id="adminPassword" runat="server" required="required" />
+                        <input type="password" class="form-control" id="aPassword" runat="server" required="required" />
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="rememberMe" runat="server" required="required" />

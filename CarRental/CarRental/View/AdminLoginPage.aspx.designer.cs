@@ -15,22 +15,22 @@ namespace CarRental.View
     {
 
         /// <summary>
-        /// adminMail control.
+        /// aMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl adminMail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl aMail;
 
         /// <summary>
-        /// adminPassword control.
+        /// aPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword adminPassword;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword aPassword;
 
         /// <summary>
         /// rememberMe control.

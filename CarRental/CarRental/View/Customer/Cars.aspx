@@ -73,6 +73,12 @@
     </style>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <label id="custName" runat="server">XXXXXX XXXXXXX</label>
+            </div>
+        </div>
         <div class="row top-image">
             <div class="col-md-4"></div>
             <div class="mx-auto" id="car-box">
@@ -94,7 +100,7 @@
             <div class=" col-12 ">
                 <form runat="server" id="carSearch">
                     <div class="row grid-section">
-                        <asp:GridView ID="carList" class="table-grid" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" runat="server">
+                        <asp:GridView ID="carList" class="table-grid" CssClass="table" BorderColor="Black" BorderWidth="2px" AutoGenerateSelectButton="True" runat="server" OnSelectedIndexChanged="carList_SelectedIndexChanged">
                             <AlternatingRowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
                             <RowStyle BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
                             <HeaderStyle BackColor="#000000" ForeColor="White" BorderColor="Black" BorderWidth="2px" />
@@ -120,7 +126,7 @@
                         </div>
                     </div>
                     <div class="row btn-book">
-                        <asp:Button type="submit" ID="btnBook" class="btn btn-warning" Text="Book" runat="server" />
+                        <asp:Button type="submit" ID="btnBook" class="btn btn-warning" Text="Book" runat="server" OnClick="btnBook_Click" />
                     </div>
                 </form>
             </div>
